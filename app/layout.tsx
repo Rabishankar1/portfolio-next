@@ -9,8 +9,9 @@ const open = Open_Sans({ subsets: ["latin"] });
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rabishankar' Portfolio",
+  title: "Rabishankar's Portfolio",
   description: "Modern and minimalist JS Portfolio",
+  icons: "/R_simple.jpg"
 };
 
 export default function RootLayout({

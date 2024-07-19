@@ -22,7 +22,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleHashChange);
     };
-  }, []);
+  }, [visibleSection]);
   return (
     <nav className="navbar flex justify-between bg-slate-50 px-4 py-2 m-4 items-center rounded-xl z-10">
       <span

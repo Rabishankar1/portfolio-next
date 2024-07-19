@@ -10,7 +10,7 @@ const Projects = () => {
         My Projects
       </Heading>
       <div className="prose prose-xl prose-invert mb-10 text-xl">
-        These are some of my personal projects made with implementation of some
+        Personal projects made with implementation of some
         of the concepts I have learnt over the years. <br />
         Please Feel free to go through them
       </div>

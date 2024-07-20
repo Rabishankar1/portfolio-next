@@ -154,7 +154,7 @@ export const PROJECTS = [
   ],
   [
     "Travel app",
-    ["React", "HTML", "Javascript"],
+    ["React", "HTML", "Javascript", "Responsive design"],
     "https://rabishankar-travel-app.netlify.app",
     "/images/thumbnails/travel.avif",
     "travel2",

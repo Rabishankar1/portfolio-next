@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import clsx from "clsx";
 import React from "react";
 import Link from "next/link";

@@ -1,3 +1,4 @@
+"use client";
 import TechList from "../TechList/page";
 import Bounded from "../common/Bounded";
 import Button from "../common/Button";

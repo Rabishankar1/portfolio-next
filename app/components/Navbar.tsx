@@ -1,8 +1,6 @@
 "use client";
 import clsx from "clsx";
-import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import Button from "./common/Button";
 import { FIRST_NAME, LAST_NAME, sections } from "./common/constants";
 import { handleRedirectToSection } from "@/public/lib/utils";
 

@@ -14,7 +14,7 @@ const Projects = () => {
       <div className="prose prose-xl prose-invert mb-10 text-xl">
         Personal projects made with implementation of some
         of the concepts I have learnt over the years. <br />
-        Please Feel free to go through them
+        Please feel free to go through them
       </div>
       <ProjectList viewMoreText="Live Site" />
     </Bounded>

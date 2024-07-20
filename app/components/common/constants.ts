@@ -148,16 +148,9 @@ export const PROJECTS = [
   [
     "Video streaming and uploading app",
     ["React", "Javascript", "Emotion styled"],
-    "https://rabishankar-xflix.netlify.app/video/60331f421f1d093ab5424490",
+    "https://rabishankar-xflix.netlify.app",
     "/images/thumbnails/xflix.avif",
     "video1",
-  ],
-  [
-    "Travel app",
-    ["React", "HTML", "Javascript", "Responsive design"],
-    "https://rabishankar-travel-app.netlify.app",
-    "/images/thumbnails/travel.avif",
-    "travel2",
   ],
   [
     "Real Estate app",
@@ -165,6 +158,13 @@ export const PROJECTS = [
     "https://rabishankar-real-estate.netlify.app/",
     "/images/thumbnails/real_estate.avif",
     "realestate1",
+  ],
+  [
+    "Travel app",
+    ["React", "HTML", "Javascript", "Responsive design"],
+    "https://rabishankar-travel-app.netlify.app",
+    "/images/thumbnails/travel.avif",
+    "travel2",
   ],
 ].map(
   (project: any) =>

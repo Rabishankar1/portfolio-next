@@ -1,3 +1,5 @@
+"use client"
+
 import Bounded from "../common/Bounded";
 import Heading from "../common/Heading";
 import { PROJECTS } from "../common/constants";
@@ -14,7 +16,7 @@ const Projects = () => {
         of the concepts I have learnt over the years. <br />
         Please Feel free to go through them
       </div>
-      <ProjectList items={PROJECTS} viewMoreText="Live Site" />
+      <ProjectList viewMoreText="Live Site" />
     </Bounded>
   );
 };

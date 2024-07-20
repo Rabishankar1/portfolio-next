@@ -7,7 +7,6 @@ import { useGSAP } from "@gsap/react";
 import Bounded from "../common/Bounded";
 import Heading from "../common/Heading";
 import { TECH_LIST } from "../common/constants";
-import Footer from "../Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 

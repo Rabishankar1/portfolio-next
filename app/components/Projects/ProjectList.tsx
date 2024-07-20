@@ -4,18 +4,16 @@ import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MdArrowOutward } from "react-icons/md";
-import { Project } from "../common/constants";
+import { PROJECTS, Project } from "../common/constants";
 import { asImageSrc } from "@/public/lib/utils";
 
 gsap.registerPlugin(ScrollTrigger);
 
 type ContentListProps = {
-  items: Project[];
   viewMoreText: string;
 };
 
 export default function ProjectList({
-  items,
   viewMoreText = "Read More",
 }: ContentListProps) {
   const component = useRef(null);
@@ -105,7 +103,7 @@ export default function ProjectList({
     setCurrentItem(null);
   };
 
-  const contentImages = items.map((item) => {
+  const contentImages = PROJECTS.map((item) => {
     const image = item.thumbnail ? item.thumbnail : "/images/fallback.jpeg";
 
     return asImageSrc(image, {
@@ -132,7 +130,7 @@ export default function ProjectList({
         className="grid border-b border-b-slate-100"
         onMouseLeave={onMouseLeave}
       >
-        {items.map(({ link, name, technologies_used, uuid }, index) => (
+        {PROJECTS.map(({ link, name, technologies_used, uuid }, index) => (
           <li
             key={index}
             ref={(el: any) => (itemsRef.current[index] = el)}

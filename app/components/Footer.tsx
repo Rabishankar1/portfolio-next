@@ -72,14 +72,14 @@ export default function Footer() {
           >
             <FaGithub />
           </Link>
-          <Link
+          {/* <Link
             href={TWITTER_LINK}
             target="_blank"
             className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-yellow-400"
             aria-label={fullName + " on Twitter"}
           >
             <FaTwitter />
-          </Link>
+          </Link> */}
 
           <Link
             href={LINKEDIN_LINK}

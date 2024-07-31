@@ -74,27 +74,30 @@ export const EXPERIENCE_LIST = [
     "/images/companies/foundit_jobs_logo.jpeg",
   ],
   [
-    "Sarjen Systems Pvt. Ltd",
-    "Frontend Developer (Contractual)",
-    new Date(2023, 1),
-    new Date(2023, 5),
-    "Ahmedabad",
-    `Got into a freelancer contract as frontend developer in react for a offshore client and was responsible for building and managing CSM site\n
-    Improved the site considerably and the work was instrumental in guiding the client during a transitory period.\n
-    Implemented new drag and drop feature over a new calender element which I designed from ground up\n`,
-    "/images/companies/sarjen_system_pvt__ltd__logo.jpeg",
-  ],
-  [
     "Basanti Auto Agency",
     "Frontend Developer",
-    new Date(2021, 8),
-    new Date(2022, 12),
+    new Date(2021, 7),
+    new Date(2023, 4),
     "Balasore",
     `Contributed to the automobile business of car dealerships which is spread across 14 cities of Northern Odisha.\n
     Built an end-to-end reconciliation framework to fix any leakage of stocks, accessories of Mahindra automotive parts since the business is spread across multiple locations.\n
-    This solution helped to track various vehicle parts and their current stocks and statistics.\n
-    Also did many sales and financial activities to help the working of the business along with the regular developmental work.\n`,
+    Designed and implemented a real-time tracking dashboard with MUI and D3.js for visualizing vehicle parts and accessories, improving inventory management and decision-making.\n
+    Created responsive and user-friendly interfaces using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and optimal performance for internal tools and customer portals.\n
+    Developed a sales performance dashboard and financial reporting interfaces using React and Chart.js, aiding strategic decision-making and financial analysis.\n
+    Integrated frontend applications with backend services using RESTful APIs, automating business processes and reducing manual efforts, resulting in increased operational efficiency.
+    `,
     "/images/companies/basanti.jpeg",
+  ],
+  [
+    "Aerchain",
+    "Frontend Developer Intern",
+    new Date(2021, 1),
+    new Date(2023, 6),
+    "Bengaluru",
+    ` Worked in React JS for majorly frontend development tasks.\n
+    Created various features and two complete modules \n
+    Picked up skills in Frontend technologies and got to apply them`,
+    "/images/companies/aerchain_io_logo.jpeg"
   ],
 ].map(
   (experience: any) =>

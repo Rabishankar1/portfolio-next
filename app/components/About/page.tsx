@@ -9,7 +9,7 @@ import Avatar from "./Avatar";
 const About = () => {
   const handleOpenResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1CMF-3GshJatzFYMCe0x6xF0jpILRCpP8/view?usp=sharing",
+      "https://drive.google.com/file/d/1o0eVJ6uVzCeuvA51B0qN9v0Y2L3TZ5_w/view?usp=sharing",
       "_blank"
     );
   };

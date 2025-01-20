@@ -127,7 +127,7 @@ export default function ProjectList({
     <>
       <ul
         ref={component}
-        className="grid border-b border-b-slate-100"
+        className="border-b border-b-slate-100"
         onMouseLeave={onMouseLeave}
       >
         {PROJECTS.map(({ link, name, technologies_used, uuid }, index) => (
@@ -146,7 +146,7 @@ export default function ProjectList({
             >
               <div className="flex flex-col">
                 <span className="text-3xl font-bold">{name}</span>
-                <div className="flex gap-3 text-yellow-400">
+                <div className="flex gap-3 text-yellow-400 flex-wrap">
                   {technologies_used.map((tag, index) => (
                     <span key={index} className="text-lg font-bold">
                       {tag}

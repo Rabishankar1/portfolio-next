@@ -1,0 +1,18 @@
+.navbar {
+  position: sticky;
+  top: 16px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  display: none;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}

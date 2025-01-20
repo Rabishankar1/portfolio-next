@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 import Navbar from "./components/Navbar";
 import { useRouter } from "next/navigation";
 import Home from "./components/Home/page";
@@ -8,8 +8,21 @@ import About from "./components/About/page";
 import TechList from "./components/TechList/page";
 import Experience from "./components/Experience/page";
 import Projects from "./components/Projects/page";
+import "./components/navbar.css";
+import NavbarMobile from "./components/NavbarMobile";
 
+import { Dispatch, SetStateAction } from "react";
+
+export const SectionContext = createContext<{
+  visibleSection: string;
+  setVisibleSection: Dispatch<SetStateAction<string>>;
+}>({
+  visibleSection: "",
+  setVisibleSection: () => {},
+});
 export default function Main() {
+  const [visibleSection, setVisibleSection] = useState("");
+
   const sectionRefs: any = useRef({});
   const sections = [
     "home",
@@ -52,8 +65,22 @@ export default function Main() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.substring(1);
+      if (hash !== visibleSection) {
+        setVisibleSection(hash);
+      }
+    };
+
+    window.addEventListener("scroll", handleHashChange);
+
+    return () => {
+      window.removeEventListener("scroll", handleHashChange);
+    };
+  }, [visibleSection]);
   return (
-    <>
+    <SectionContext.Provider value={{ visibleSection, setVisibleSection }}>
       <main className="">
         <Navbar />
         <div>
@@ -77,6 +104,7 @@ export default function Main() {
       </main>
       <div className="absolute inset-0 -z-50 max-h-screen background-gradient"></div>
       <div className="absolute pointer-events-none inset-0 -z-40 h-full bg-[url(/noisetexture.jpg)] opacity-20 mix-blend-soft-light"></div>
-    </>
+      <NavbarMobile />
+    </SectionContext.Provider>
   );
 }

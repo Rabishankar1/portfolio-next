@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Navbar from "./components/Navbar";
 import { useRouter } from "next/navigation";
 import Home from "./components/Home/page";
@@ -10,16 +10,8 @@ import Experience from "./components/Experience/page";
 import Projects from "./components/Projects/page";
 import "./components/navbar.css";
 import NavbarMobile from "./components/NavbarMobile";
+import { SectionContext } from "./Context/SectionContext";
 
-import { Dispatch, SetStateAction } from "react";
-
-export const SectionContext = createContext<{
-  visibleSection: string;
-  setVisibleSection: Dispatch<SetStateAction<string>>;
-}>({
-  visibleSection: "",
-  setVisibleSection: () => {},
-});
 export default function Main() {
   const [visibleSection, setVisibleSection] = useState("");
 

@@ -2,8 +2,8 @@ import { handleRedirectToSection } from "@/public/lib/utils";
 import React, { useContext, useState } from "react";
 import { sections } from "./common/constants";
 import clsx from "clsx";
-import { SectionContext } from "../page";
 import Person2Icon from "@mui/icons-material/Person2";
+import { SectionContext } from "../Context/SectionContext";
 
 const NavbarMobile = () => {
   const { visibleSection, setVisibleSection } = useContext(SectionContext);

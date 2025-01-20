@@ -3,25 +3,11 @@ import clsx from "clsx";
 import { useContext, useEffect, useState } from "react";
 import { FIRST_NAME, LAST_NAME, sections } from "./common/constants";
 import { handleRedirectToSection } from "@/public/lib/utils";
-import { SectionContext } from "../page";
+import { SectionContext } from "../Context/SectionContext";
 
 const Navbar = () => {
   const { visibleSection, setVisibleSection } = useContext(SectionContext);
 
-  // useEffect(() => {
-  //   const handleHashChange = () => {
-  //     const hash = window.location.hash.substring(1);
-  //     if (hash !== visibleSection) {
-  //       setVisibleSection(hash);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleHashChange);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleHashChange);
-  //   };
-  // }, [visibleSection]);
   return (
     <>
       <nav className="navbar flex justify-between bg-slate-50 px-4 py-2 m-4 items-center rounded-xl z-10">
